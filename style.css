@@ -1,0 +1,79 @@
+section {
+  margin-bottom: 30px;
+}
+
+/* navbar */
+
+.container-fluid {
+  background: linear-gradient(45deg, #2f516d, #203f58, black);
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+
+}
+
+.avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.nav-link {
+  color: aquamarine !important;
+}
+
+/* main */
+
+.present {
+  margin-top: 10vh;
+}
+
+.presentation {
+  margin-top: 10vh;
+}
+
+.yes {
+  margin: 10px;
+}
+
+.card {
+  height: 400px;
+  margin: 10px;
+  background-color: #f8f9fa;
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+  overflow: auto;
+}
+
+.card-text {
+  white-space: pre-line;
+  overflow: auto;
+}
+
+.card-body a {
+  margin: 5px;
+}
+
+/* formulaire */
+
+
+/* footer */
+
+.footer {
+  text-align: center;
+}
+
+.rowed {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Modal */
+
+.troll {
+  margin: 10px;
+}

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="build/stylesheets/index.css">
+    <title>Portfolio</title>
+</head>
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#"><img class="avatar" src="public/images/IMG_0759.jpg"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#anchor-project">Projet</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#anchor-contact">Contactez-moi</a>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </header>
+
+    <main>
+
+        <section class="container present">
+            <div class="row">
+                <div class="col-md-6 presentation">
+                    <h1>Bonjour, je suis <span class="text-primary">Christophe</span></h1>
+                    <p>Je suis un développeur full-stack junior passionné. J'aime transformer des idées en réalité grâce à la programmation. J'ai eu l'occasion de travailler sur une gamme diversifiée de projets, me permettant d'acquérir une solide expérience dans plusieurs technologies. Chaque projet a été une opportunité d'apprendre et de grandir en tant que développeur.</p>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>Node.js</li>
+                        <li>Express</li>
+                        <li>Angular</li>
+                        <li>React</li>
+                        <li>Bootstrap</li>
+                        <li>MongoDB</li>
+                        <li>MySQL</li>
+                    </ul>
+
+                    <a class="btn btn-danger" data-toggle="modal" data-target="#videoModal">Ne pas cliquer !</a>
+
+                    <h3 class="yes">Voici une liste de mes projets ci-dessous. 👇👇👇 </h3>
+                </div>
+                <div class="col-md-6">
+                    <img src="public/images/clouds-4459530_1280.jpg" class="img-fluid" alt="John Doe">
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <h2 class="text-center" id="anchor-project">Mes projets</h2>
+                <div class="row justify-content-center">
+                    <div class="col-md-6">
+                        <div class="card text-center">
+                            <div class="card-body">
+                                <h5 class="card-title">Projet Immobilier</h5>
+                                <a href="https://thiou-christophe.alwaysdata.net/" class="btn btn-primary">Détails</a>
+                                <p class="card-text">Ce projet immobilier a été développé dans le cadre de ma formation en développement web. Il s'agit d'une plateforme en ligne qui permet aux agences immobilières de gérer leurs biens. Les agences peuvent lister, modifier et supprimer des propriétés directement depuis la plateforme. De plus, ce projet est conçu pour être relié à une application mobile, qui n'est pas encore développée, pour offrir une plus grande accessibilité aux utilisateurs.
+        
+                                    Pour le développement de ce projet, j'ai utilisé Angular pour le front-end, en tirant parti de ses fonctionnalités puissantes pour créer une interface utilisateur interactive et réactive. Bootstrap a été utilisé pour le design et la mise en page, ce qui a permis d'obtenir un site web esthétiquement agréable et adaptatif.
+                                    
+                                    Pour le back-end, j'ai utilisé Node.js avec Express, ce qui a permis de créer un serveur web efficace et performant. Enfin, MongoDB a été utilisé pour la base de données, permettant de stocker et de récupérer des informations sur les propriétés.
+                                    
+                                    Ce projet m'a permis d'acquérir une expérience pratique dans le développement d'applications web full-stack et m'a donné une compréhension approfondie de la façon dont les différentes technologies peuvent être utilisées ensemble pour créer une solution fonctionnelle et conviviale.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <form action="https://httpbin.org/post" method="post">
+        <div class="container">
+            <div class="row justify-content-center">
+                <h2 class="text-center" id="anchor-contact">Contactez-moi</h2>
+                <div class="col-md-6">
+                    <div class="form-group m-5
+                    ">
+                        <label for="name">Nom</label>
+                        <input type="text" class="form-control m-2" name="name" placeholder="Votre nom">
+                    </div>
+                    <div class="form-group m-5
+                    ">
+                        <label for="email">Email</label>
+                        <input type="email" class="form-control m-2" name="email" placeholder="Votre email">
+                    </div>
+                    <div class="form-group m-5
+                    ">
+                        <label for="message">Message</label>
+                        <textarea class="form-control m-2" name="message" rows="3"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary m-5">Envoyer</button>
+                </div>
+            </div>
+        </div>
+    </form>
+
+    <!-- Modal -->
+
+    <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="videoModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="videoModalLabel">Lecteur Vidéo</h5>
+            </div>
+            <p class="troll">Je vous avais averti pourtant</p>
+            <div class="modal-body">
+              <div class="embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/dQw4w9WgXcQ?si=Xb9zQV-iBiDGHF7R" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <footer>
+        <div class="container">
+            <div class="row rowed">
+                <div class="col-md-6 footer">
+                    <p>© 2024 Christophe Thiou. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</html>
